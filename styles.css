@@ -1,0 +1,22 @@
+.card-body {
+    width: 240px;
+    height: 336px;
+    /* margin: 20px; */
+}
+
+.character {
+    font-size: 70px;
+    font-family: "Leto", sans-serif;
+}
+
+#topLeft {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+
+#bottomRight {
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+}
