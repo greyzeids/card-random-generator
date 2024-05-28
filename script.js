@@ -19,7 +19,7 @@ function generateCard() {
     let randomSuit = suits[Math.floor(Math.random() * suits.length)];
     let randomValue = values[Math.floor(Math.random() * values.length)];
 
-    let color = randomSuit === "♦" || randomSuit === "♥" ? "red" : "black";
+    let color = randomSuit === "♦" || randomSuit === "♥" ? "red" : "nothing";
 
     document.getElementById("number").innerHTML = `<span style="color: ${color};">${randomValue}</span>`; // prettier-ignore
     document.getElementById("topLeft").innerHTML = `<span style="color: ${color};">${randomSuit}</span>`; // prettier-ignore

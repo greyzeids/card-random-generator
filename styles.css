@@ -19,4 +19,5 @@
     position: absolute;
     bottom: 0px;
     right: 25px;
+    transform: rotate(180deg);
 }
