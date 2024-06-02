@@ -18,23 +18,28 @@
             rel="stylesheet"
         />
     </head>
-
-    <body class="bg-success">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6 text-center">
-                    <div id="card" class="card-body mt-4 card d-flex justify-content-center align-items-center ">
-                        <div id="topLeft" class="character"></div> 
-                        <div id="number" class="character"></div> 
-                        <div id="bottomRight" class="character"></div>
-                    </div>
-                    <button type="button" class="mt-4" onclick="generateCard()">Generar Carta</button>
-                </div>
-                
+    <body class="bg-success d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <div id="card" class="card-body mt-4 card d-flex justify-content-center align-items-center">
+                <div id="topLeft" class="character"></div>
+                <div id="number" class="character"></div>
+                <div id="bottomRight" class="character"></div>
+            </div>
+    
+            <button type="button" class="mt-4 btn btn-primary" onclick="generateCard()">
+                Generar Carta
+            </button>
+    
+            <div class="mt-4">
+                <label for="cardWidth">Ancho de la carta:</label>
+                <input type="text" id="cardWidth" class="form-control" placeholder="240px" min="0" />
+                <label for="cardHeight">Alto de la carta:</label>
+                <input type="text" id="cardHeight" class="form-control" placeholder="336px" min="0" />
+                <button type="button" class="btn btn-secondary mt-2" onclick="cardSize()">
+                    Aplicar tamaño
+                </button>
             </div>
         </div>
-
-        
 
         <script src="script.js"></script>
         <script

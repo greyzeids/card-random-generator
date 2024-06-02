@@ -19,9 +19,19 @@ function generateCard() {
     let randomSuit = suits[Math.floor(Math.random() * suits.length)];
     let randomValue = values[Math.floor(Math.random() * values.length)];
 
-    let color = randomSuit === "♦" || randomSuit === "♥" ? "red" : "nothing";
+    let color = randomSuit === "♦" || randomSuit === "♥" ? "red" : "";
 
     document.getElementById("number").innerHTML = `<span style="color: ${color};">${randomValue}</span>`; // prettier-ignore
     document.getElementById("topLeft").innerHTML = `<span style="color: ${color};">${randomSuit}</span>`; // prettier-ignore
     document.getElementById("bottomRight").innerHTML = `<span style="color: ${color};">${randomSuit}</span>`; // prettier-ignore
+}
+
+function cardSize() {
+    let width = document.getElementById("cardWidth").value;
+    let height = document.getElementById("cardHeight").value;
+
+    let card = document.getElementById("card");
+
+    card.style.width = width ? width : card.style.width;
+    card.style.height = height ? height : card.style.height;
 }
