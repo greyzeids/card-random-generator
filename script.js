@@ -1,3 +1,7 @@
+window.onload = function () {
+    document.getElementById("initialImage").src = "images/joker.png";
+};
+
 function generateCard() {
     let suits = ["♦", "♥", "♠", "♣"];
     let values = [
@@ -24,6 +28,7 @@ function generateCard() {
     document.getElementById("number").innerHTML = `<span style="color: ${color};">${randomValue}</span>`; // prettier-ignore
     document.getElementById("topLeft").innerHTML = `<span style="color: ${color};">${randomSuit}</span>`; // prettier-ignore
     document.getElementById("bottomRight").innerHTML = `<span style="color: ${color};">${randomSuit}</span>`; // prettier-ignore
+    document.getElementById("initialImage").style.display = "none";
 }
 
 function cardSize() {

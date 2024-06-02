@@ -20,22 +20,47 @@
     </head>
     <body class="bg-success d-flex justify-content-center align-items-center">
         <div class="text-center">
-            <div id="card" class="card-body mt-4 card d-flex justify-content-center align-items-center">
+            <div
+                id="card"
+                class="card-body mt-5 card d-flex justify-content-center align-items-center rounded-5">
                 <div id="topLeft" class="character"></div>
                 <div id="number" class="character"></div>
                 <div id="bottomRight" class="character"></div>
+                <img
+                    id="initialImage"
+                    alt="Initial Image"
+                />
             </div>
-    
-            <button type="button" class="mt-4 btn btn-primary" onclick="generateCard()">
+
+            <button
+                type="button"
+                class="mt-4 btn btn-danger"
+                onclick="generateCard()">
                 Generar Carta
             </button>
-    
-            <div class="mt-4">
-                <label for="cardWidth">Ancho de la carta:</label>
-                <input type="text" id="cardWidth" class="form-control" placeholder="240px" min="0" />
+
+            <div class="mt-4 text-light">
+                <label for="cardWidth ">Ancho de la carta:</label>
+                <input
+                    type="text"
+                    id="cardWidth"
+                    class="form-control"
+                    placeholder="240px"
+                    min="0"
+                />
                 <label for="cardHeight">Alto de la carta:</label>
-                <input type="text" id="cardHeight" class="form-control" placeholder="336px" min="0" />
-                <button type="button" class="btn btn-secondary mt-2" onclick="cardSize()">
+                <input
+                    type="text"
+                    id="cardHeight"
+                    class="form-control"
+                    placeholder="336px"
+                    min="0"
+                />
+                <button
+                    type="button"
+                    class="btn btn-danger mt-4"
+                    onclick="cardSize()"
+                >
                     Aplicar tamaño
                 </button>
             </div>
