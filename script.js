@@ -37,6 +37,6 @@ function cardSize() {
 
     let card = document.getElementById("card");
 
-    card.style.width = width ? width : card.style.width;
-    card.style.height = height ? height : card.style.height;
+    card.style.width = width ? width : card.style.width + "px";
+    card.style.height = height ? height : card.style.height + "px";
 }
