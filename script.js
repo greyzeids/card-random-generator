@@ -32,11 +32,11 @@ function generateCard() {
 }
 
 function cardSize() {
-    let width = document.getElementById("cardWidth").value;
-    let height = document.getElementById("cardHeight").value;
+    let width = parseInt(document.getElementById("cardWidth").value);
+    let height = parseInt(document.getElementById("cardHeight").value);
 
     let card = document.getElementById("card");
 
-    card.style.width = width ? width : card.style.width + "px";
-    card.style.height = height ? height : card.style.height + "px";
+    card.style.width = width ? width + "px" : card.style.width;
+    card.style.height = height ? height + "px" : card.style.height;
 }
